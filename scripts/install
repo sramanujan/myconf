@@ -21,6 +21,6 @@ else
     fi
 fi
 echo "Pull complete"
-~/myconf/scripts/post-install
+bash ~/myconf/scripts/post-install
 echo "Install complete"
 exit
