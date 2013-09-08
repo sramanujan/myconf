@@ -5,8 +5,8 @@ cd ~
 function make_symlink()
 {
     #$1 will have the name
-    if [ ! -h $1 ] then;
-        if [ -f $1 ] then;
+    if [ ! -h $1 ]; then
+        if [ -f $1 ]; then
             mv $1 "$1.bak";
         fi
         ln -s myconf/$1
