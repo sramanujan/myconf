@@ -15,7 +15,7 @@ function make_symlink()
 
 files=(
 .bash_profile
-.bash_rc
+.bashrc
 .bash_aliases
 .bash_logout
 );
