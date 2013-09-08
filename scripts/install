@@ -3,7 +3,7 @@ function install()
 {
     cd ~
     rm -rf myconf
-    git clone git@github.com:sramanujan/myconf.git
+    git clone https://github.com/sramanujan/myconf.git
 }
 function update()
 {
