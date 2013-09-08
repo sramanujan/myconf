@@ -1,0 +1,27 @@
+#!/bin/bash
+# THIS SCRIPT WORKS FROM USER's HOME FOLDER - SO FORCE IT
+cd ~
+
+function make_symlink()
+{
+    #$1 will have the name
+    if [ ! -h $1 ] then;
+        if [ -f $1 ] then;
+            mv $1 "$1.bak"
+        fi
+        ln -s myconf/$1
+    fi
+}
+
+files=(
+.bash_profile
+.bash_rc
+.bash_aliases
+.bash_logout
+);
+
+for i in "${files[@]}"; do make_symlink $i; done
+
+exit
+
+

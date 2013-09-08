@@ -4,13 +4,11 @@ function install()
     cd ~
     rm -rf myconf
     git clone git@github.com:sramanujan/myconf.git
-    echo "Installation complete!"
 }
 function update()
 {
     cd ~/myconf
     git pull origin master
-    echo "Update complete!"
 }
 cd ~
 if [ ! -d "myconf" ]; then 
@@ -22,4 +20,7 @@ else
         update;
     fi
 fi
+echo "Pull complete"
+~/myconf/scripts/post-install
+echo "Install complete"
 exit
