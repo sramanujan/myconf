@@ -24,7 +24,15 @@ set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
 
-
+if has("autocmd")
+    augroup sramanujan_vim
+        " When editing file, jump to last position
+        autocmd BufReadPost *
+            \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+            \   exe "normal! g'\"" |
+            \ endif
+    augroup END
+endif
 
 map <F6> :tabp<CR>
 map <F7> :tabn<CR>

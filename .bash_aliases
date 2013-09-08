@@ -19,3 +19,4 @@ function sssh()
     ssh $1 "curl -L https://github.com/sramanujan/myconf/raw/master/scripts/install | sh >>/tmp/sramanujan-myconf.log 2>&1";
     ssh $@;
 }
+alias vim="vim -u ~/.vimrc"
