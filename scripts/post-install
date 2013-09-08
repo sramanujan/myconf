@@ -18,6 +18,8 @@ files=(
 .bashrc
 .bash_aliases
 .bash_logout
+.vimrc
+.gitconfig
 );
 
 for i in "${files[@]}"; do make_symlink $i; done

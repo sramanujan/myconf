@@ -12,9 +12,10 @@ alias castlebuild="cd /Users/sramanujan/Documents/CastleVille/build"
 alias castledeploy="cd /Users/sramanujan/Documents/CastleVille/deploy"
 for ((i=22;i<=33;i++));
 do
-  alias "$i"="ssh -A dev2-dallas-$i.zc2.zynga.com"
+  alias "$i"="sssh dev2-dallas-$i.zc2.zynga.com -A"
 done
 function sssh()
 {
-    ssh $1 "curl -L https://github.com/sramanujan/myconf/raw/master/scripts/install | sh"; ssh $1;
+    ssh $1 "curl -L https://github.com/sramanujan/myconf/raw/master/scripts/install | sh &>>/tmp/sramanujan-myconf.log";
+    ssh $@;
 }
