@@ -1,7 +1,25 @@
 #!/bin/bash
+function install()
+{
+    cd ~
+    rm -rf myconf
+    git clone git@github.com:sramanujan/myconf.git
+    echo "Installation complete!"
+}
+function update()
+{
+    cd ~/myconf
+    git pull origin master
+    echo "Update complete!"
+}
 cd ~
-rm -rf myconf
-git clone git@github.com:sramanujan/myconf.git 
-
+if [ ! -d "myconf" ]; then 
+    install; 
+else
+    if [ ! -d "myconf/.git" ]; then
+        install;
+    else
+        update;
+    fi
+fi
 exit
-
