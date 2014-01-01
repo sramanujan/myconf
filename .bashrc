@@ -114,18 +114,20 @@ if ! shopt -oq posix; then
 fi
 
 # Srinath Ramanujan ---- my custom exports...
-export ZLA_GAME_PATH="/Users/sramanujan/Documents/ENA/wc-1";
+export ZLA_GAME_PATH="/Users/srinath/Documents/ENA/wc-1";
 export ZLA_ASSETS_TYPE="sandbox-upload"
 export ZLA_DEV_URL="empire-dev-03.zc1.zynga.com"
 export EDITOR=vim
-export IDEA_JDK="/Users/sramanujan/Applications/jdk1.7.0_21/" 
-export COCOS2DX_ROOT="/Users/sramanujan/Documents/cocos2d-x"
-export NDK_ROOT="/Users/sramanujan/Documents/android-ndk-r8e/"
-export ANDROID_NDK_ROOT="/Users/sramanujan/Documents/android-ndk-r8e/"
-export ANDROID_SDK_ROOT="/Users/sramanujan/Documents/android-sdk-macosx/"
-export PATH=/Users/sramanujan/Bin:$PATH
-export PATH=$PATH:/Users/sramanujan/Applications/Qt5.0.0/5.0.0/gcc_64/bin
-export PATH=$PATH:/Users/sramanujan/Applications/node-v0.10.9-linux-x64/bin
+export IDEA_JDK="/Users/srinath/Applications/jdk1.7.0_21/" 
+export COCOS2DX_ROOT="/Users/srinath/Documents/cocos2d-x"
+export SDK_ROOT="/Users/srinath/Documents/android-sdk-macosx/"
+export NDK_ROOT="/Users/srinath/Documents/android-ndk-r9b/"
+export ANDROID_NDK_ROOT="/Users/srinath/Documents/android-ndk-r9b/"
+export ANDROID_SDK_ROOT="/Users/srinath/Documents/android-sdk-macosx/"
+export NDK_MODULE_PATH=$COCOS2DX_ROOT:$COCOS2DX_ROOT/cocos2dx/platform/third_party/android/prebuilt
+export PATH=/Users/srinath/Bin:$PATH
+export PATH=$PATH:/Users/srinath/Applications/Qt5.0.0/5.0.0/gcc_64/bin
+export PATH=$PATH:/Users/srinath/Applications/node-v0.10.9-linux-x64/bin
 # Tell ls to be colourful
 export CLICOLOR=1
 export HISTSIZE=5000
@@ -151,4 +153,4 @@ GREEN=$(tput setaf 64)
 
 #PS1="\[\033[0;36m\]\\u@\\h\[\033[0;32m\]:\[\033[0;33m\]\\w\[\033[0;32m\] $ \[\033[m\]"
 
-echo "sramanujan - setup complete"
+echo "srinath - setup complete"
