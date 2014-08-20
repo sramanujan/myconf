@@ -32,6 +32,10 @@ set cmdheight=2
 set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
+set t_Co=256
+set background=dark
+set nu
+colorscheme distinguished
 
 if has("autocmd")
     augroup sramanujan_vim
