@@ -14,6 +14,8 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'SQLComplete.vim'
+Plugin 'dbext.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -58,5 +60,7 @@ map <F7> :tabn<CR>
 map <F8> :w<CR>
 map <F9> :wq<CR>
 map <F10> :q<CR>
+
+let g:dbext_default_profile_MF_REDSHIFT = 'type=PGSQL:user=moonfrog:passwd=Fr0ggyfrog:host=moonfrog-stats-cluster-01.ced0qq4cl0eg.us-east-1.redshift.amazonaws.com:port=5439:dbname=dball'
 
 syntax on
