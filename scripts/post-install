@@ -20,6 +20,7 @@ files=(
 .bash_logout
 .vimrc
 .gitconfig
+.vim
 );
 
 for i in "${files[@]}"; do make_symlink $i; done
