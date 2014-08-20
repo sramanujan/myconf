@@ -4,11 +4,13 @@ function install()
     cd ~
     rm -rf myconf
     git clone https://github.com/sramanujan/myconf.git
+    git submodule update --recursive --init
 }
 function update()
 {
     cd ~/myconf
     git pull origin master
+    git submodule update --recursive --init
 }
 cd ~
 if [ ! -d "myconf" ]; then 
