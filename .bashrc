@@ -125,13 +125,16 @@ export NDK_ROOT="/Users/srinath/Documents/android-ndk-r9b/"
 export ANDROID_NDK_ROOT="/Users/srinath/Documents/android-ndk-r9b/"
 export ANDROID_SDK_ROOT="/Users/srinath/Documents/android-sdk-macosx/"
 export NDK_MODULE_PATH=$COCOS2DX_ROOT:$COCOS2DX_ROOT/cocos2dx/platform/third_party/android/prebuilt
-export PATH=/Users/srinath/Bin:$PATH
+export PATH=$PATH:/usr/local/sbin
+#export PATH=/Users/srinath/bin:$PATH
+#export PATH=/Users/srinath/Bin:$PATH
 export PATH=$PATH:/Users/srinath/Applications/Qt5.0.0/5.0.0/gcc_64/bin
 export PATH=$PATH:/Users/srinath/Applications/node-v0.10.9-linux-x64/bin
 # Tell ls to be colourful
 export CLICOLOR=1
 export HISTSIZE=5000
 export HISTFILESIZE=5000
+export GOPATH="/Users/srinath/Documents/squirrel"
 
 #export LSCOLORS=GxFxCxDxBxegedabagaced
 #export LSCOLORS=Exfxcxdxbxegedabagacad
