@@ -16,6 +16,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'SQLComplete.vim'
 Plugin 'dbext.vim'
+Plugin 'ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

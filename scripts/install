@@ -3,8 +3,7 @@ function install()
 {
     cd ~
     rm -rf myconf
-    git clone https://github.com/sramanujan/myconf.git
-    git submodule update --recursive --init
+    git clone --recursive https://github.com/sramanujan/myconf.git
 }
 function update()
 {
