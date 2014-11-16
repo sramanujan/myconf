@@ -23,7 +23,6 @@ do
 done
 function sssh()
 {
-    ssh $1 "curl -L https://github.com/sramanujan/myconf/raw/master/scripts/install | bash >>/tmp/srinath-myconf.log 2>&1";
-    ssh $@;
+    ssh -t $@ "`cat ~/myconf/scripts/install` bash -l"
 }
 alias vim="vim -u ~/.vimrc"
