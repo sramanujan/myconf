@@ -9,6 +9,7 @@ function update()
 {
     cd ~/myconf
     git pull origin master
+    git submodule sync
     git submodule update --recursive --init
 }
 cd ~
