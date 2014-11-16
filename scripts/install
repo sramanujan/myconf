@@ -13,6 +13,4 @@ else
         git submodule update --recursive --init;
     fi
 fi
-echo "Pull complete";
 bash ~/myconf/scripts/post-install;
-echo "Install complete";
