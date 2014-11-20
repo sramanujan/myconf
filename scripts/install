@@ -11,6 +11,7 @@ else
         git pull origin master;
         git submodule sync;
         git submodule update --recursive --init;
+        cd ;
     fi
 fi
 bash ~/myconf/scripts/post-install;
