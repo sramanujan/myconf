@@ -4,6 +4,7 @@ alias bingodev="sssh dev-1.bingo.moonfroglabs.in -A"
 alias tbingo="sssh t.bingo.moonfroglabs.com -A"
 alias tambola="cd /Users/srinath/Documents/tambola"
 alias teenpatti="cd /Users/srinath/Documents/teenpatti"
+alias nova="cd /Users/srinath/Documents/nova"
 alias squirrel="cd /Users/srinath/Documents/squirrel"
 alias professor="cd /Users/srinath/Documents/professor"
 alias mflxpgame="cd /Users/srinath/Documents/mflxpgame"
@@ -27,3 +28,5 @@ function sssh()
     ssh -t $@ "`cat ~/myconf/scripts/install` bash -l"
 }
 alias vim="vim -u ~/.vimrc"
+alias python2=python
+alias python22.7=python2

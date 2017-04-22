@@ -1,3 +1,7 @@
 [user]
 	email = gr8srinath@gmail.com
 	name = Srinath Ramanujan
+[push]
+	default = simple
+[pull]
+	default = simple
